@@ -51,7 +51,7 @@ signUp.addEventListener('click', (event) => {
       return setDoc(docRef, userData);
     })
     .then(() => {
-      window.location.href = 'index.html';
+      window.location.href = 'Login.html';
     })
     .catch((error) => {
       const errorCode = error.code;

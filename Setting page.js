@@ -20,7 +20,7 @@ document.getElementById("profile").addEventListener("click", function() {
 
 document.getElementById("logout").addEventListener("click", function() {
     alert("You have been logged out.");
-    window.location.href = "Login page.html";
+    window.location.href = "index.html";
 });
 
 document.getElementById("settings-form").addEventListener("submit", function(event) {

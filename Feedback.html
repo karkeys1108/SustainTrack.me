@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CUSTOMER'S FEEDBACK</title>
+    <link rel="stylesheet" href="Feedback page.css">
+</head>
+<body>
+
+    <div class="navigation">
+        <div class="logo-section">
+            <div class="nav_image">
+                <img src="1.png" alt="Your Icon">
+            </div>
+            <div class="logo-container">
+                <h1 class="logo_name">SustainTack.me</h1>
+            </div>
+        </div>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+        <ul class="nav-links">
+            <li><a href="Home page C.html">Home</a></li>
+            <li><a href="Reward page.html">Rewards</a></li>
+            <li><a href="Task page.html">Completed</a></li>
+            <li><a href="Setting page.html">Settings</a></li>
+        </ul>
+    </div>
+   
+    <div class="container">
+        <div class="logo-container">
+            <!-- Add your logo here -->
+            <img src="1.png" alt="Sustaintrack.me" class="logo">
+            <a href="Home page C.html" target="_blank">SustainTract</a>
+        </div>
+        
+        <h1>CUSTOMER'S FEEDBACK</h1>
+        <form id="feedback-form" method="POST" action="submit_feedback.php">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+            <!-- The pattern attribute contains a regular expression for email validation -->
+
+            <label for="experience">How was your experience using this Website?</label>
+            <textarea id="experience" name="experience" required></textarea>
+
+            <label for="improvements">Any suggestions for improvement?</label>
+            <textarea id="improvements" name="improvements"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

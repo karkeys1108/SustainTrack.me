@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carbon Footprint Calculator</title>
+    <link rel="stylesheet" href="Calculator page.css">
+</head>
+<body>
+    
+<div class="navigation">
+    <div class="logo-section">
+        <div class="nav_image">
+            <img src="1.png" alt="Your Icon">
+        </div>
+        <div class="logo-container">
+            <h1 class="logo_name">SustainTack.me</h1>
+        </div>
+    </div>
+    <input type="checkbox" class="menu-btn" id="menu-btn">
+    <label class="menu-icon" for="menu-btn"><span class="nav-icon"></span></label>
+    <ul class="nav-links">
+        <li><a href="Home page C.html">Home</a></li>
+        <li><a href="Reward page.html">Rewards</a></li>
+        <li><a href="Task page.html">Completed</a></li>
+        <li><a href="Setting page.html">Settings</a></li>
+    </ul>
+</div>
+<h1>Carbon Footprint Calculator</h1>
+<label for="country">Country:</label>
+<select id="country">
+    <option value="national">National Average</option>
+        <option value="Albania">Albania</option>
+        <option value="Algeria">Algeria</option>
+        <option value="Angola">Angola</option>
+        <option value="Argentina">Argentina</option>
+        <option value="Armenia">Armenia</option>
+        <option value="Australia">Australia</option>
+        <option value="Austria">Austria</option>
+        <option value="Azerbaijan">Azerbaijan</option>
+        <option value="Bahrain">Bahrain</option>
+        <option value="Bangladesh">Bangladesh</option>
+        <option value="Belarus">Belarus</option>
+        <option value="Belgium">Belgium</option>
+        <option value="Benin">Benin</option>
+        <option value="Bolivia">Bolivia</option>
+        <option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+        <option value="Botswana">Botswana</option>
+        <option value="Brazil">Brazil</option>
+        <option value="Brunei Darussalam">Brunei Darussalam</option>
+        <option value="Bulgaria">Bulgaria</option>
+        <option value="Cambodia">Cambodia</option>
+        <option value="Cameroon">Cameroon</option>
+        <option value="Canada">Canada</option>
+        <option value="Chile">Chile</option>
+        <option value="China">China</option>
+        <option value="Hong Kong SAR, China">Hong Kong SAR, China</option>
+        <option value="Colombia">Colombia</option>
+        <option value="Congo, Dem. Rep.">Congo, Dem. Rep.</option>
+        <option value="Congo, Rep.">Congo, Rep.</option>
+        <option value="Costa Rica">Costa Rica</option>
+        <option value="Cote d'Ivoire">Cote d'Ivoire</option>
+        <option value="Croatia">Croatia</option>
+        <option value="Cuba">Cuba</option>
+        <option value="Curacao">Curacao</option>
+        <option value="Cyprus">Cyprus</option>
+        <option value="Czech Republic">Czech Republic</option>
+        <option value="Denmark">Denmark</option>
+        <option value="Dominican Republic">Dominican Republic</option>
+        <option value="Ecuador">Ecuador</option>
+        <option value="Egypt, Arab Rep.">Egypt, Arab Rep.</option>
+        <option value="El Salvador">El Salvador</option>
+        <option value="Eritrea">Eritrea</option>
+        <option value="Estonia">Estonia</option>
+        <option value="Ethiopia">Ethiopia</option>
+        <option value="Finland">Finland</option>
+        <option value="France">France</option>
+        <option value="Gabon">Gabon</option>
+        <option value="Georgia">Georgia</option>
+        <option value="Germany">Germany</option>
+        <option value="Ghana">Ghana</option>
+        <option value="Greece">Greece</option>
+        <option value="Guatemala">Guatemala</option>
+        <option value="Haiti">Haiti</option>
+        <option value="Honduras">Honduras</option>
+        <option value="Hungary">Hungary</option>
+        <option value="Iceland">Iceland</option>
+        <option value="India" selected>India</option>
+        <option value="Indonesia">Indonesia</option>
+        <option value="Iran, Islamic Rep.">Iran, Islamic Rep.</option>
+        <option value="Iraq">Iraq</option>
+        <option value="Ireland">Ireland</option>
+        <option value="Israel">Israel</option>
+        <option value="Italy">Italy</option>
+        <option value="Jamaica">Jamaica</option>
+        <option value="Japan">Japan</option>
+        <option value="Jordan">Jordan</option>
+        <option value="Kazakhstan">Kazakhstan</option>
+        <option value="Kenya">Kenya</option>
+        <option value="Korea, Dem. People’s Rep.">Korea, Dem. People’s Rep.</option>
+        <option value="Korea, Rep.">Korea, Rep.</option>
+        <option value="Kosovo">Kosovo</option>
+        <option value="Kuwait">Kuwait</option>
+        <option value="Kyrgyz Republic">Kyrgyz Republic</option>
+        <option value="Latvia">Latvia</option>
+        <option value="Lebanon">Lebanon</option>
+        <option value="Libya">Libya</option>
+        <option value="Lithuania">Lithuania</option>
+        <option value="Luxembourg">Luxembourg</option>
+        <option value="Macedonia, FYR">Macedonia, FYR</option>
+        <option value="Malaysia">Malaysia</option>
+        <option value="Malta">Malta</option>
+        <option value="Mauritius">Mauritius</option>
+        <option value="Mexico">Mexico</option>
+        <option value="Moldova">Moldova</option>
+        <option value="Mongolia">Mongolia</option>
+        <option value="Montenegro">Montenegro</option>
+        <option value="Morocco">Morocco</option>
+        <option value="Mozambique">Mozambique</option>
+        <option value="Myanmar">Myanmar</option>
+        <option value="Namibia">Namibia</option>
+        <option value="Nepal">Nepal</option>
+        <option value="Netherlands">Netherlands</option>
+        <option value="New Zealand">New Zealand</option>
+        <option value="Nicaragua">Nicaragua</option>
+        <option value="Niger">Niger</option>
+        <option value="Nigeria">Nigeria</option>
+        <option value="Norway">Norway</option>
+        <option value="Oman">Oman</option>
+        <option value="Pakistan">Pakistan</option>
+        <option value="Panama">Panama</option>
+        <option value="Paraguay">Paraguay</option>
+        <option value="Peru">Peru</option>
+        <option value="Philippines">Philippines</option>
+        <option value="Poland">Poland</option>
+        <option value="Portugal">Portugal</option>
+        <option value="Qatar">Qatar</option>
+        <option value="Romania">Romania</option>
+        <option value="Russian Federation">Russian Federation</option>
+        <option value="Saudi Arabia">Saudi Arabia</option>
+        <option value="Senegal">Senegal</option>
+        <option value="Serbia">Serbia</option>
+        <option value="Singapore">Singapore</option>
+        <option value="Slovak Republic">Slovak Republic</option>
+        <option value="Slovenia">Slovenia</option>
+        <option value="South Africa">South Africa</option>
+        <option value="South Sudan">South Sudan</option>
+        <option value="Spain">Spain</option>
+        <option value="Sri Lanka">Sri Lanka</option>
+        <option value="Sudan">Sudan</option>
+        <option value="Suriname">Suriname</option>
+        <option value="Sweden">Sweden</option>
+        <option value="Switzerland">Switzerland</option>
+        <option value="Syrian Arab Republic">Syrian Arab Republic</option>
+        <option value="Tajikistan">Tajikistan</option>
+        <option value="Tanzania">Tanzania</option>
+        <option value="Thailand">Thailand</option>
+        <option value="Togo">Togo</option>
+        <option value="Trinidad and Tobago">Trinidad and Tobago</option>
+        <option value="Tunisia">Tunisia</option>
+        <option value="Turkey">Turkey</option>
+        <option value="Turkmenistan">Turkmenistan</option>
+        <option value="Ukraine">Ukraine</option>
+        <option value="United Arab Emirates">United Arab Emirates</option>
+        <option value="United Kingdom">United Kingdom</option>
+        <option value="United States">United States</option>
+        <option value="Uruguay">Uruguay</option>
+        <option value="Uzbekistan">Uzbekistan</option>
+        <option value="Venezuela, RB">Venezuela, RB</option>
+        <option value="Vietnam">Vietnam</option>
+        <option value="Yemen, Rep.">Yemen, Rep.</option>
+        <option value="Zambia">Zambia</option>
+        <option value="Zimbabwe">Zimbabwe</option>
+        <option value="USA">USA</option>
+        <option value="Canada">Canada</option>
+    <!-- More countries can be added here -->
+</select>
+
+<label for="state">State:</label>
+<label for="state">Select State (optional):</label>
+<select id="state">
+    <option value="">Select State (optional)</option>
+    <option value="Andhra Pradesh">Andhra Pradesh</option>
+    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+    <option value="Assam">Assam</option>
+    <option value="Bihar">Bihar</option>
+    <option value="Chhattisgarh">Chhattisgarh</option>
+    <option value="Goa">Goa</option>
+    <option value="Gujarat">Gujarat</option>
+    <option value="Haryana">Haryana</option>
+    <option value="Himachal Pradesh">Himachal Pradesh</option>
+    <option value="Jharkhand">Jharkhand</option>
+    <option value="Karnataka">Karnataka</option>
+    <option value="Kerala">Kerala</option>
+    <option value="Madhya Pradesh">Madhya Pradesh</option>
+    <option value="Maharashtra">Maharashtra</option>
+    <option value="Manipur">Manipur</option>
+    <option value="Meghalaya">Meghalaya</option>
+    <option value="Mizoram">Mizoram</option>
+    <option value="Nagaland">Nagaland</option>
+    <option value="Odisha">Odisha</option>
+    <option value="Punjab">Punjab</option>
+    <option value="Rajasthan">Rajasthan</option>
+    <option value="Sikkim">Sikkim</option>
+    <option value="Tamil Nadu"selected>Tamil Nadu</option>
+    <option value="Telangana">Telangana</option>
+    <option value="Tripura">Tripura</option>
+    <option value="Uttar Pradesh">Uttar Pradesh</option>
+    <option value="Uttarakhand">Uttarakhand</option>
+    <option value="West Bengal">West Bengal</option>
+</select>
+
+<div>
+    <button class="tab-button active" onclick="openTab(event, 'general')">General</button>
+    <button class="tab-button" onclick="openTab(event, 'house')">House</button>
+    <button class="tab-button" onclick="openTab(event, 'car')">Car</button>
+    <button class="tab-button" onclick="openTab(event, 'motorbike')">Motorbike</button>
+    <button class="tab-button" onclick="openTab(event, 'busRail')">Bus & Rail</button>
+    <button class="tab-button" onclick="openTab(event, 'secondary')">Secondary</button>
+    <button class="tab-button" onclick="openTab(event, 'flights')">Flights</button>
+    <button class="tab-button" onclick="openTab(event, 'travel')">Travel</button>
+</div>
+
+<!-- -------------------------------------------------General footprint--------------------------------------------------------------------------->
+<div id="general" class="tab-content active">
+    <!-- General footprint calculation inputs -->
+    <h2>General Footprint</h2>
+    
+    <!-- Household information -->
+    <label for="householdSize">Household Size:</label>
+    <input type="number" id="householdSize" min="1" placeholder="Number of people">
+    <br>
+    
+    <!-- Electricity usage -->
+    <label for="electricityUsage">Electricity Usage (kWh per month):</label>
+    <input type="number" id="electricityUsage" placeholder="Enter kWh">
+    <br>
+    
+    <!-- Water usage -->
+    <label for="waterUsage">Water Usage (liters per day):</label>
+    <input type="number" id="waterUsage" placeholder="Enter liters">
+    <br>
+    
+    <!-- Waste production -->
+    <label for="wasteProduction">Waste Production (kg per week):</label>
+    <input type="number" id="wasteProduction" placeholder="Enter kg">
+    <br>
+    
+    <!-- Dietary preferences -->
+    <label for="dietType">Dietary Preferences:</label>
+    <select id="dietType">
+        <option value="omnivore">Omnivore</option>
+        <option value="vegetarian">Vegetarian</option>
+        <option value="vegan">Vegan</option>
+    </select>
+    <br>
+    
+    <!-- Transportation -->
+    <label for="transportationMode">Primary Mode of Transportation:</label>
+    <select id="transportationMode">
+        <option value="car">Car</option>
+        <option value="publicTransport">Public Transport</option>
+        <option value="bicycle">Bicycle</option>
+        <option value="walking">Walking</option>
+    </select>
+    <br>
+    
+    <label for="transportationDistance">Average Distance Traveled (km per week):</label>
+    <input type="number" id="transportationDistance" placeholder="Enter km">
+    <br>
+    
+    <!-- Miscellaneous activities -->
+    <label for="miscellaneousActivities">Miscellaneous Activities (carbon impact in kg CO2 per month):</label>
+    <input type="number" id="miscellaneousActivities" placeholder="Enter kg CO2">
+    <br>
+    
+    <!-- Calculate button -->
+    <button onclick="calculateGeneralFootprint()">Calculate Footprint</button>
+    
+    <!-- Result display -->
+    <h3>Your General Footprint for the Day</h3>
+    <p>Total CO<sub>2</sub> emissions: <span id="totalGeneralEmissions">0</span> kg CO<sub>2</sub> per day</p>
+</div>
+
+
+
+<!-- ----------------------------------------------------General footprint------------------------------------------------------------------------>
+
+<!-- -----------------------------------------------------------House----------------------------------------------------------------->
+<div id="house" class="tab-content">
+    <!-- House footprint calculation inputs -->
+    <h2>House Footprint</h2>
+    
+    <!-- House size -->
+    <label for="houseSize">House Size (square meters):</label>
+    <input type="number" id="houseSize" placeholder="Enter square meters">
+    <br>
+    
+    <!-- Number of occupants -->
+    <label for="occupants">Number of Occupants:</label>
+    <input type="number" id="occupants" min="1" placeholder="Enter number">
+    <br>
+    
+    <!-- Energy efficiency rating -->
+    <label for="energyRating">Energy Efficiency Rating:</label>
+    <select id="energyRating">
+        <option value="A">A</option>
+        <option value="B">B</option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="G">G</option>
+    </select>
+    <br>
+    
+    <!-- Heating type -->
+    <label for="heatingType">Heating Type:</label>
+    <select id="heatingType">
+        <option value="electric">Electric</option>
+        <option value="gas">Gas</option>
+        <option value="oil">Oil</option>
+        <option value="wood">Wood</option>
+        <option value="other">Other</option>
+    </select>
+    <br>
+    
+    <!-- Monthly heating cost -->
+    <label for="heatingCost">Monthly Heating Cost ($):</label>
+    <input type="number" id="heatingCost" placeholder="Enter cost">
+    <br>
+    
+    <!-- Electricity usage -->
+    <label for="electricityUsage">Electricity Usage (kWh per month):</label>
+    <input type="number" id="electricityUsage" placeholder="Enter kWh">
+    <br>
+    
+    <!-- Water usage -->
+    <label for="waterUsage">Water Usage (liters per day per person):</label>
+    <input type="number" id="waterUsage" placeholder="Enter liters">
+    <br>
+    
+    <!-- Waste production -->
+    <label for="wasteProduction">Waste Production (kg per week per person):</label>
+    <input type="number" id="wasteProduction" placeholder="Enter kg">
+    <br>
+    
+    <!-- Calculate button -->
+    <button onclick="calculateHouseFootprint()">Calculate Footprint</button>
+    
+    <!-- Result display -->
+    <h3>Your House Footprint for the Day</h3>
+    <p>Total CO<sub>2</sub> emissions: <span id="totalHouseEmissions">0</span> kg CO<sub>2</sub> per day</p>
+</div>
+
+
+<!-- ------------------------------------------------------------House---------------------------------------------------------------->
+<!-- -------------------------------------------------------------Car footprint--------------------------------------------------------------->
+<div id="car" class="tab-content">
+    <!-- Car footprint calculation inputs -->
+    <h2>Car Footprint</h2>
+    
+    <!-- Car type -->
+    <label for="carType">Car Type:</label>
+    <select id="carType">
+        <option value="small">Small</option>
+        <option value="medium">Medium</option>
+        <option value="large">Large</option>
+    </select>
+    <br>
+    
+    <!-- Fuel type -->
+    <label for="fuelType">Fuel Type:</label>
+    <select id="fuelType">
+        <option value="petrol">Petrol</option>
+        <option value="diesel">Diesel</option>
+        <option value="hybrid">Hybrid</option>
+        <option value="electric">Electric</option>
+    </select>
+    <br>
+    
+    <!-- Average fuel consumption -->
+    <label for="fuelConsumption">Average Fuel Consumption (liters per 100 km):</label>
+    <input type="number" id="fuelConsumption" placeholder="Enter liters/100km">
+    <br>
+    
+    <!-- Distance traveled -->
+    <label for="distanceTraveled">Distance Traveled (km):</label>
+    <input type="number" id="distanceTraveled" placeholder="Enter km">
+    <br>
+    
+    <!-- Calculate button -->
+    <button onclick="calculateCarFootprint()">Calculate Footprint</button>
+    
+    <!-- Result display -->
+    <h3>Your Car Footprint</h3>
+    <p>Total CO<sub>2</sub> emissions: <span id="totalCarEmissions">0</span> kg CO<sub>2</sub> per day</p>
+</div>
+
+<!-- -------------------------------------------------------------Car footprint--------------------------------------------------------------->
+<!-- -------------------------------------------------------------Motor footprint--------------------------------------------------------------->
+<div id="motorbike" class="tab-content">
+    <!-- Motorbike footprint calculation inputs -->
+    <h2>Motorbike Footprint</h2>
+    
+    <!-- Motorbike type -->
+    <label for="motorbikeType">Motorbike Type:</label>
+    <select id="motorbikeType">
+        <option value="scooter">Scooter</option>
+        <option value="cruiser">Cruiser</option>
+        <option value="sports">Sports</option>
+    </select>
+    <br>
+    
+    <!-- Fuel type -->
+    <label for="motorbikeFuelType">Fuel Type:</label>
+    <select id="motorbikeFuelType">
+        <option value="petrol">Petrol</option>
+        <option value="diesel">Diesel</option>
+        <option value="electric">Electric</option>
+    </select>
+    <br>
+    
+    <!-- Average fuel consumption -->
+    <label for="motorbikeFuelConsumption">Average Fuel Consumption (liters per 100 km):</label>
+    <input type="number" id="motorbikeFuelConsumption" placeholder="Enter liters/100km">
+    <br>
+    
+    <!-- Distance traveled -->
+    <label for="motorbikeDistanceTraveled">Distance Traveled (km):</label>
+    <input type="number" id="motorbikeDistanceTraveled" placeholder="Enter km">
+    <br>
+    
+    <!-- Calculate button -->
+    <button onclick="calculateMotorbikeFootprint()">Calculate Footprint</button>
+    
+    <!-- Result display -->
+    <h3>Your Motorbike Footprint</h3>
+    <p>Total CO<sub>2</sub> emissions: <span id="totalMotorbikeEmissions">0</span> kg CO<sub>2</sub> per day</p>
+</div>
+
+
+<!-- --------------------------------------------------------------Motor foot print-------------------------------------------------------------->
+<!-- ---------------------------------------------------------------Bus and rail ------------------------------------------------------------->
+
+<div id="busRail" class="tab-content">
+    <!-- Bus & Rail footprint calculation inputs -->
+    <h2>Bus & Rail Footprint</h2>
+    
+    <!-- Transport type -->
+    <label for="transportType">Transport Type:</label>
+    <select id="transportType">
+        <option value="bus">Bus</option>
+        <option value="rail">Rail</option>
+    </select>
+    <br>
+    
+    <!-- Distance traveled -->
+    <label for="busRailDistanceTraveled">Distance Traveled (km):</label>
+    <input type="number" id="busRailDistanceTraveled" placeholder="Enter km">
+    <br>
+    
+    <!-- Calculate button -->
+    <button onclick="calculateBusRailFootprint()">Calculate Footprint</button>
+    
+    <!-- Result display -->
+    <h3>Your Bus & Rail Footprint</h3>
+    <p>Total CO<sub>2</sub> emissions: <span id="totalBusRailEmissions">0</span> kg CO<sub>2</sub> per day</p>
+</div>
+
+<!-- ---------------------------------------------------------------Bus and rail ------------------------------------------------------------->
+
+<div id="secondary" class="tab-content">
+    <!-- Secondary footprint calculation inputs -->
+    <h2>Secondary Footprint</h2>
+    <label for="secondaryInput">Enter value (kg CO<sub>2</sub> per month):</label>
+    <input type="number" id="secondaryInput" placeholder="Enter kg CO2">
+    <br>
+    
+    <!-- Calculate button -->
+    <button onclick="calculateSecondaryFootprint()">Calculate Footprint</button>
+    
+    <!-- Result display -->
+    <h3>Your Secondary Footprint</h3>
+    <p>Total CO<sub>2</sub> emissions: <span id="totalSecondaryEmissions">0</span> kg CO<sub>2</sub> per day</p>
+</div>
+
+<!-- -------------------------------------------------------Flights --------------------------------------------------------------------->
+
+<div id="flights" class="tab-content">
+    <!-- Flights footprint calculation inputs -->
+    <h2>Flights Footprint</h2>
+    <label for="flightsInput">Enter value (kg CO<sub>2</sub> per year):</label>
+    <input type="number" id="flightsInput" placeholder="Enter kg CO2">
+    <br>
+    
+    <!-- Calculate button -->
+    <button onclick="calculateFlightsFootprint()">Calculate Footprint</button>
+    
+    <!-- Result display -->
+    <h3>Your Flights Footprint</h3>
+    <p>Total CO<sub>2</sub> emissions: <span id="totalFlightsEmissions">0</span> kg CO<sub>2</sub> per year</p>
+</div>
+
+<!-- ---------------------------------------------------Travel ------------------------------------------------------------------------->
+<div id="travel" class="tab-content">
+    <!-- Travel footprint calculation inputs -->
+    <h2>Travel Footprint</h2>
+    <label for="travelInput">Enter value (kg CO<sub>2</sub> per day):</label>
+    <input type="number" id="travelInput" placeholder="Enter kg CO2">
+    <br>
+    
+    <!-- Calculate button -->
+    <button onclick="calculateTravelFootprint()">Calculate Footprint</button>
+    
+    <!-- Result display -->
+    <h3>Your Travel Footprint</h3>
+    <p>Total CO<sub>2</sub> emissions: <span id="totalTravelEmissions">0</span> kg CO<sub>2</sub> per day</p>
+</div>
+
+
+<button onclick="calculateFootprint()">Calculate Footprint</button>
+
+<h2 id="result">Total Footprint: </h2>
+
+
+
+<script src="Calculator page.js"></script>
+
+
+
+</body>
+</html>

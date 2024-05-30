@@ -1,0 +1,135 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background: #839d50;
+    color: white;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 60px;
+    width: 60px;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+header nav ul li {
+    display: inline;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+header nav ul li a:hover {
+    background: #405825;
+    border-radius: 5px;
+}
+
+section {
+    padding: 40px 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.intro h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.intro p {
+    font-size: 1.2em;
+}
+
+.team .team-members {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.team .team-member {
+    text-align: center;
+    width: 200px;
+}
+
+.team .team-member img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.team .team-member h3 {
+    margin: 10px 0 5px;
+}
+
+.story, .commitment, .testimonials, .cta {
+    background: #ecf0f1;
+    padding: 20px 0;
+}
+
+.testimonials .testimonial {
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.cta {
+    text-align: center;
+}
+
+.cta .btn {
+    background: #27ae60;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.cta .btn:hover {
+    background: #2ecc71
+}
+
+footer {
+    background: #2c3e50;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+footer ul li a:hover {
+    text-decoration: underline;
+}

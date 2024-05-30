@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Storage Details</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: #d4e9d4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .storage-container {
+            max-width: 600px;
+            width: 100%;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease;
+        }
+        .storage-header {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .progress-bar-container {
+            margin-bottom: 20px;
+        }
+        .progress-bar {
+            position: relative;
+            height: 25px;
+            width: 100%;
+            background-color: #f3f3f3;
+            border-radius: 5px;
+            overflow: hidden;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+        .progress-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            background: linear-gradient(90deg, #56ab2f, #a8e063);
+            transition: width 1s ease;
+        }
+        .progress-bar[data-percent="100"]::after {
+            width: 100%;
+        }
+        .progress-bar[data-percent="70"]::after {
+            width: 70%;
+        }
+        .progress-bar[data-percent="50"]::after {
+            width: 50%;
+        }
+        .progress-bar[data-percent="30"]::after {
+            width: 30%;
+        }
+        .progress-bar[data-percent="20"]::after {
+            width: 20%;
+        }
+        .progress-bar:hover {
+            transform: scale(1.05);
+        }
+        .progress-label {
+            font-size: 1em;
+            color: #333;
+            margin-bottom: 5px;
+        }
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="storage-container">
+        <div class="storage-header">
+            <h1>Storage Details</h1>
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-label">Total Storage: 100GB</div>
+            <div class="progress-bar" data-percent="100"></div>
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-label">Used Storage: 70GB</div>
+            <div class="progress-bar" data-percent="70"></div>
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-label">Remaining Storage: 30GB</div>
+            <div class="progress-bar" data-percent="30"></div>
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-label">Carbon Footprint Data: 50GB</div>
+            <div class="progress-bar" data-percent="50"></div>
+        </div>
+        <div class="progress-bar-container">
+            <div class="progress-label">Other Data: 20GB</div>
+            <div class="progress-bar" data-percent="20"></div>
+        </div>
+    </div>
+</body>
+</html>

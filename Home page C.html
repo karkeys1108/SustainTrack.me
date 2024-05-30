@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SustainTrack.me</title>
+    <link rel="stylesheet" href="Home page C.css" />
+    <link flex href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!--Js link -->
+    <script src="Home page C.js" defer></script>
+  </head>
+  <body>
+    <a href="Profile.html" class="profile-link">
+        <div class="profile-icon">
+            <img src="1.png" alt="Profile Icon">
+        </div>
+    </a>
+    
+    <nav class="sidebar locked">
+      <div class="logo_items flex">
+        <span class="nav_image">
+          <img src="1.png" alt="" />
+        </span>
+        <div class="logo-container">
+            <span class="logo_name">SustainTrack.me</span>
+        </div>
+        
+        <i class="bx bx-x" id="sidebar-close"></i>
+      </div>
+
+      <div class="menu_container">
+        <div class="menu_items">
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Dashboard</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="Home page C.html" class="link flex"><!---Home page ref-->
+                <i class="bx bx-home-alt"></i>
+                <span>Home</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="Calculator page.html" class="link flex"><!--Calculator page ref-->
+                <i class="bx bx-calculator"></i>
+
+                <span>Calculate</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="Home page.html" class="link flex"><!--Product page ref-->
+                <i class="bx bx-check"></i>
+                <span>Eco Friendly Products</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Goals & Rewards</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="Task page.html" class="link flex"><!--task page ref-->
+                <i class="bx bxs-magic-wand"></i>
+                <span> Tasks</span>
+              </a>
+            </li>
+
+            <li class="item">
+              <a href="Reward page.html" class="link flex"><!--Rewards page ref-->
+                <i class="bx bx-award"></i>
+                <span>Rewards</span>
+              </a>
+            </li>
+          </ul>
+
+          <ul class="menu_item">
+            <div class="menu_title flex">
+              <span class="title">Setting</span>
+              <span class="line"></span>
+            </div>
+            <li class="item">
+              <a href="Feedback.html" class="link flex"><!--Feed back page ref-->
+                <i class="bx bx-flag"></i>
+                <span>Feedback</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="About page.html" class="link flex"><!--About us page ref-->
+                <i class="bx bx-info-circle"></i>
+                <span>About us</span>
+              </a>
+            </li>
+            <li class="item">
+              <a href="Setting page.html" class="link flex"><!--Setting page ref-->
+                <i class="bx bx-cog"></i>
+                <span>Setting</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="sidebar_profile flex">
+          <span class="nav_image">
+            <img src="1.png" alt="logo_img" />
+          </span>
+          <div class="data_text">
+            <span class="name"> SustainTrack.me</span>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="main-content">
+        <div class="description">
+          <h1>Calculate Your Carbon Footprint</h1>
+          <p>Measure the impact of your daily activities on the environment by calculating your carbon footprint.</p>
+        </div>
+        <!--Below button for calvulator page ref-->
+        <button class="calculate-btn button animate"><a href="Calculator page.html">Calculate Carbon Footprint</a></button>
+
+        <div class="card-container">
+            <a href="#" class="card"><!--Recent  data page ref-->
+              <i class="bx bx-world"></i>
+              <h2>Your Carbon Footprint</h2>
+              <p>Your carbon footprint for the month of May 2024: 
+                <h4>500 kg CO2</h4></p>
+            </a>
+            <a href="#" class="card"><!--Past data page ref -->
+              <i class='bx bx-recycle'></i>
+              <h2>Your Works Based on Past Activities</h2>
+              <p>Resulting improvement:  <h4>Achieved a 25% decrease in carbon emissions compared to the previous month.</h4></p>
+            </a>
+            <a href="Reward page.html" class="card"><!--Rewards page -->
+              <i class='bx bx-gift'></i> 
+              <h2>Total Number of Rewards Earned</h2>
+              <p>Total rewards earned: <h4>0 points</h4></p>
+            </a>
+          </div>
+          <div class="recent-data-box">
+            <!-- Initial visible data -->
+            <table>
+              <!-- Table headers -->
+              <thead>
+                <tr>
+                  <th>Day</th>
+                  <th>Date</th>
+                  <th>Transport Mode</th>
+                  <th>CO2 Emission</th>
+                  <th>Rating</th>
+                </tr>
+              </thead>
+              <!-- Table body with initial rows -->
+              <tbody>
+                <!-- Sample data for 2 days initially -->
+                <tr>
+                  <td>Monday</td>
+                  <td>2024-05-01</td>
+                  <td>Car</td>
+                  <td>50 kg</td>
+                  <td>Not Good</td>
+                </tr>
+                <tr>
+                  <td>Tuesday</td>
+                  <td>2024-05-02</td>
+                  <td>Public Transport</td>
+                  <td>30 kg</td>
+                  <td>Moderate</td>
+                </tr>
+              </tbody>
+            </table>
+            <!-- More button -->
+            <button class="more-btn" onclick="toggleMoreData()">More</button>
+            <!-- Additional data initially hidden -->
+            <div class="more-data" style="display: none;">
+              <table>
+                <!-- Additional rows of data -->
+                <!-- Replace the content with additional data -->
+                <tbody>
+                  <!-- Sample data for additional days (3rd day onwards) -->
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>2024-05-03</td>
+                    <td>Bicycle</td>
+                    <td>10 kg</td>
+                    <td>Good</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>2024-05-04</td>
+                    <td>Car</td>
+                    <td>20 kg</td>
+                    <td>Moderate</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>2024-05-05</td>
+                    <td>Bicycle</td>
+                    <td>10 kg</td>
+                    <td>Good</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>2024-05-06</td>
+                    <td>Car</td>
+                    <td>50 kg</td>
+                    <td>Not</td>
+                  </tr>
+                  <!-- Add more rows as needed -->
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <!--Below past data page ref-->
+          <button class="past-data-btn"><a href="#">Past Data</a></button>
+  </body>
+</html>

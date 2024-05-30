@@ -58,5 +58,5 @@ logoutButton.addEventListener('click', () => {
     });
 });
 document.getElementById('goMainPage').onclick = function() {
-    window.location.href = 'Home page C.html';
+    window.location.href = 'index.html';
 };
